@@ -1,142 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formativa 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<section>
-    <h1>Mi Perfil</h1>
-    <br>
-    <img src="img/images.png" alt="Avatar" height="200">
-    <br>
-    <h3>Mi Nombre es Tomás Namur Ubilla, soy estudiante de 4to Medio de diferenciado de programación y esta es una pagina creada en lenguaje html para escribir sobre mi</h3>
-</section>
+    <!--Barra de navegacion-->
 
-<section>
-    <hr>
-    <h2>Sobre Mí</h2>
-    <p>Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la musica. Aspiro ha ser estudiante de ingeniieria civil mecanica pra luego poder trabajar en las empresas de automovilismo en Europa.</p>
-     
-    <p>Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica me ayuda a seguir adelante y las matematicas me ayudan a cumplir mis metas. Este año espero salir de cuarto medio habiendo adquirido los conocimientos basicos de la logica, pseudocodigos, java y html para ppoder salir con una base solida al mundo universitario</p>
-    <hr>
-    <h2>Tecnologias y conocimientos</h2>
-    <ul>
-        <li>Scratch</li>
-        <li>Java</li>
-        <li>Excel</li>
-        <li>Html</li>
-        <li>App Inventor</li>
-    </ul>
-    <h3>Que me gustaria Aprender</h3>
-    <ul>
-        <li>Python</li>
-        <li>C++</li>
-    </ul>
-    <p>Esto mas con el proposito de conocer mas que aplicar o ejercer estos lenguajes</p>
-    <hr>
-</section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mis proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria de Imagenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Enlaces</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<section>
-    <h2>Mis Proyectos</h2>
-    <p>A lo largo de mi estadia estudiantil e realizado varios proyectos aunque en su mayoria de programación, como en java y html los cuales quedan adjuntos:</p>
-    <br>
-    <ol>
-        <li><a href="https://github.com/Nontom17/Sistema-Cajero-Autom-tico.git">Proyecto Github Cajero Automatico Java</a>
-    <p>En este proyecto aprendí a como programar una interfaz muy simple de un cajero automatico, utilizando elemtos basicos de repetición como el "For", "do While" y variables que premiten cambiar el monto que se ingresa o saca.</p>
-    <img src="img/Captura de pantalla 2026-08-03 130714.png" alt="Captura Cajero Automatico" height="230"></li>
-    <br>
-    <li><a href="https://github.com/Nontom17/Primera-pagina-web.git">Proyecto Primera Pagina Web Html</a>
-    <p>Aca está la primera pagina que realicé con html, simplemente aprendiendo las cosas basicas y viendo como lucen al hacerlo funcionar</p>
-    <img src="img/Captura de pantalla 2026-08-03 130311.png" alt="Captura pantalla primera pagina" height="230"></li>
-    </ol>
-    <hr>
-    
-</section>
+    <!--Encabezado-->
 
-<section>
+    <section>
+        <h1 class="Titulo">Mi Perfil</h1>
+        <br>
+        <img id="Imagenperfil" src="img/Perfil.png" alt="Avatar" height="200">
+        <br>
+        <h3 class="container">Mi Nombre es Tomás Namur Ubilla, soy estudiante de 4to Medio de diferenciado de
+            programación y esta es una pagina creada en lenguaje html para escribir sobre mi</h3>
+    </section>
+
+    <!--Sección personal-->
+
+    <section>
+        <hr>
+        <h2>Sobre Mí</h2>
+        <p class= "container">Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la musica. Aspiro ha ser
+            estudiante de ingeniieria civil mecanica pra luego poder trabajar en las empresas de automovilismo en
+            Europa.</p>
+
+        <p class= "container">Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica me ayuda a seguir
+            adelante y las matematicas me ayudan a cumplir mis metas. Este año espero salir de cuarto medio habiendo
+            adquirido los conocimientos basicos de la logica, pseudocodigos, java y html para ppoder salir con una base
+            solida al mundo universitario</p>
+        <hr>
+        <h2>Tecnologias y conocimientos</h2>
+        <ul>
+            <li>Scratch</li>
+            <li>Java</li>
+            <li>Excel</li>
+            <li>Html</li>
+            <li>App Inventor</li>
+        </ul>
+        <h3>Que me gustaria Aprender</h3>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+        <p class= "container">Esto mas con el proposito de conocer mas que aplicar o ejercer estos lenguajes</p>
+        <hr>
+    </section>
+
+    <!--Proyectos-->
+
+    <section>
+        <h2>Mis Proyectos</h2>
+        <p class= "container">A lo largo de mi estadia estudiantil e realizado varios proyectos aunque en su mayoria de programación, como
+            en java y html los cuales quedan adjuntos:</p>
+        <br>
+        <ol>
+            <li><a href="https://github.com/Nontom17/Sistema-Cajero-Autom-tico.git">Proyecto Github Cajero Automatico
+                    Java</a>
+                <p class= "container">En este proyecto aprendí a como programar una interfaz muy simple de un cajero automatico, utilizando
+                    elemtos basicos de repetición como el "For", "do While" y variables que premiten cambiar el monto
+                    que se ingresa o saca.</p>
+                <img src="img/ProyectoJava.png" alt="Captura Cajero Automatico" height="230">
+            </li>
+            <br>
+            <li><a href="https://github.com/Nontom17/Primera-pagina-web.git">Proyecto Primera Pagina Web Html</a>
+                <p class= "container">Aca está la primera pagina que realicé con html, simplemente aprendiendo las cosas basicas y viendo
+                    como lucen al hacerlo funcionar</p>
+                <img src="img/Poryectohtml.png" alt="Captura pantalla primera pagina" height="230">
+            </li>
+        </ol>
+        <hr>
+
+    </section>
+
+    <!--Galeria de Imagenes-->
+
+    <section>
         <h2>Galeria de Imagenes</h2>
-        <p>Aca dejo un par de imagenes de mis actividades y cosas personales sobre mi</p>
+        <p class= "container">Aca dejo un par de imagenes de mis actividades y cosas personales sobre mi</p>
         <ul>
             <li>Mi deporte de motor favorito
                 <br>
-                <img src="img/GettyImages-1240545798-scaled.webp" alt="Carrera F1" height="250">
+                <img src="img/Formula1.webp" alt="Carrera F1" height="250">
             </li>
             <br>
             <li>Mi juego favorito
                 <br>
-                <img src="img/H2x1_NSwitch_DeadCells.jpg" alt="Dead Cells" height="250">
+                <img src="img/DeadCells.jpg" alt="Dead Cells" height="250">
             </li>
             <br>
             <li>Mi banda favorita
                 <br>
-                <img src="img/ab67616d00001e0281e0d9617e70d75e7ae11fa6.jpg" alt="250">
+                <img src="img/SLipknot.jpg" alt="Slipknot" height="250">
             </li>
         </ul>
         <hr>
-</section>
+    </section>
 
-<section>
-    <h2>Mi Información personal</h2>
+    <!--informacion personal-->
 
-    <table border="1px">
-        <THead>
-            <th>Categoria</th>
-            <th>Información</th>
-        </THead>
-        <tbody>
-            <tr>
-                <td>Ciudad</td>
-                <td>Villa Alemana</td>
-            </tr>
-            <tr>
-                <td>Hobby</td>
-                <td>Escuchar musica</td>
-            </tr>
-            <tr>
-                <td>Comida Favorita</td>
-                <td>Pizza</td>
-            </tr>
-            <tr>
-                <td>Lenguaje Favorito</td>
-                <td>Java</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    <hr>
-</section>
+    <section>
+        <h2>Mi Información personal</h2>
 
-<section>
-    <h2>Enlaces</h2>
-    <br>
-    <a href="https://github.com/Nontom17">Perfil de GitHub</a>
-    <br>
-    <a href="https://youtube.com/@nontom._.17?si=YW6N7LClLAYYc9A_">Youtube</a>
-    <br>
-    <a href="https://open.spotify.com/intl-es">Spotify</a>
-    <hr>
-</section>
+        <table border="1px">
+            <THead>
+                <th>Categoria</th>
+                <th>Información</th>
+            </THead>
+            <tbody>
+                <tr>
+                    <td>Ciudad</td>
+                    <td>Villa Alemana</td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>Escuchar musica</td>
+                </tr>
+                <tr>
+                    <td>Comida Favorita</td>
+                    <td>Pizza</td>
+                </tr>
+                <tr>
+                    <td>Lenguaje Favorito</td>
+                    <td>Java</td>
+                </tr>
+            </tbody>
 
-<section>
-    <form action="">
+        </table>
+        <hr>
+    </section>
 
-        <label for="Nombre">Nombre: </label>
-        <input type="text" id="Nombre">
+    <!--Enlaces-->
+
+    <section>
+        <h2>Enlaces</h2>
         <br>
-        <label for="correo">Correo: </label>
-        <input type="email">
+        <a href="https://github.com/Nontom17">Perfil de GitHub</a>
         <br>
-        <label for="mensaje">Asunto y mensaje: </label>
-        <textarea name="mensaje" id="mensaje" rows="4" cols="20"></textarea>
+        <a href="https://youtube.com/@nontom._.17?si=YW6N7LClLAYYc9A_">Youtube</a>
         <br>
-        <input type="submit" value="Enviar">
+        <a href="https://open.spotify.com/intl-es">Spotify</a>
+        <hr>
+    </section>
+
+    <!--formulario-->
+
+    <section>
+        <form action="">
+
+            <label for="Nombre">Nombre: </label>
+            <input type="text" id="Nombre">
+            <br>
+            <label for="correo">Correo: </label>
+            <input type="email">
+            <br>
+            <label for="mensaje">Asunto y mensaje: </label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="20"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
 
 
-    </form>
-</section>
-    
+        </form>
+    </section>
+
+
 </body>
+
 </html>
