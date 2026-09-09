@@ -45,12 +45,12 @@
 
     <!--Encabezado-->
 
-    <section>
-        <h1 class="Titulo">Mi Perfil</h1>
-        <br>
-        <img id="Imagenperfil" src="img/Perfil.png" alt="Avatar" height="200">
-        <br>
-        <h3 class="container">Mi Nombre es Tomás Namur Ubilla, soy estudiante de 4to Medio de diferenciado de
+    <section class="perfil-section">
+        <div class="perfil-header">
+            <img id="Imagenperfil" src="img/Perfil.png" alt="Avatar" height="200">
+            <h1 class="Titulo">Mi Perfil</h1>
+        </div>
+        <h3 class="container">Mi Nombre es <em>Tomás Namur Ubilla</em>, soy estudiante de 4to Medio de diferenciado de
             programación y esta es una pagina creada en lenguaje html para escribir sobre mi</h3>
     </section>
 
@@ -59,50 +59,123 @@
     <section>
         <hr>
         <h2>Sobre Mí</h2>
-        <p class= "container">Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la musica. Aspiro ha ser
-            estudiante de ingeniieria civil mecanica pra luego poder trabajar en las empresas de automovilismo en
+        <p class="container">Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la
+            musica. Aspiro ha ser
+            estudiante de ingeniieria civil mecanica para luego poder trabajar en las empresas de automovilismo en
             Europa.</p>
 
-        <p class= "container">Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica me ayuda a seguir
+        <p class="container">Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica me
+            ayuda a seguir
             adelante y las matematicas me ayudan a cumplir mis metas. Este año espero salir de cuarto medio habiendo
             adquirido los conocimientos basicos de la logica, pseudocodigos, java y html para ppoder salir con una base
             solida al mundo universitario</p>
         <hr>
         <h2>Tecnologias y conocimientos</h2>
-        <ul>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contenido del primer ítem del acordeón.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contenido del segundo ítem del acordeón.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contenido del tercer ítem del acordeón.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour">
+                        Accordion Item #4
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contenido del cuarto ítem del acordeón.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive">
+                        Accordion Item #5
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contenido del quinto ítem del acordeón.</div>
+                </div>
+            </div>
+        </div>
+        <!--<ul>
             <li>Scratch</li>
             <li>Java</li>
             <li>Excel</li>
             <li>Html</li>
             <li>App Inventor</li>
-        </ul>
+        </ul>-->
         <h3>Que me gustaria Aprender</h3>
-        <ul>
+        <!--<ul>
             <li>Python</li>
             <li>C++</li>
-        </ul>
-        <p class= "container">Esto mas con el proposito de conocer mas que aplicar o ejercer estos lenguajes</p>
+        </ul>-->
+        <p class="container">Esto mas con el proposito de conocer mas que aplicar o ejercer estos lenguajes</p>
         <hr>
     </section>
+
+    <!--lista-->
+
+
 
     <!--Proyectos-->
 
     <section>
         <h2>Mis Proyectos</h2>
-        <p class= "container">A lo largo de mi estadia estudiantil e realizado varios proyectos aunque en su mayoria de programación, como
+        <p class="container">A lo largo de mi estadia estudiantil e realizado varios proyectos aunque en su mayoria de
+            programación, como
             en java y html los cuales quedan adjuntos:</p>
         <br>
         <ol>
             <li><a href="https://github.com/Nontom17/Sistema-Cajero-Autom-tico.git">Proyecto Github Cajero Automatico
                     Java</a>
-                <p class= "container">En este proyecto aprendí a como programar una interfaz muy simple de un cajero automatico, utilizando
+                <p class="container">En este proyecto aprendí a como programar una interfaz muy simple de un cajero
+                    automatico, utilizando
                     elemtos basicos de repetición como el "For", "do While" y variables que premiten cambiar el monto
                     que se ingresa o saca.</p>
                 <img src="img/ProyectoJava.png" alt="Captura Cajero Automatico" height="230">
             </li>
             <br>
             <li><a href="https://github.com/Nontom17/Primera-pagina-web.git">Proyecto Primera Pagina Web Html</a>
-                <p class= "container">Aca está la primera pagina que realicé con html, simplemente aprendiendo las cosas basicas y viendo
+                <p class="container">Aca está la primera pagina que realicé con html, simplemente aprendiendo las cosas
+                    basicas y viendo
                     como lucen al hacerlo funcionar</p>
                 <img src="img/Poryectohtml.png" alt="Captura pantalla primera pagina" height="230">
             </li>
@@ -115,7 +188,7 @@
 
     <section>
         <h2>Galeria de Imagenes</h2>
-        <p class= "container">Aca dejo un par de imagenes de mis actividades y cosas personales sobre mi</p>
+        <p class="container">Aca dejo un par de imagenes de mis actividades y cosas personales sobre mi</p>
         <ul>
             <li>Mi deporte de motor favorito
                 <br>
