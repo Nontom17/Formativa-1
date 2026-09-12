@@ -21,7 +21,7 @@
 
 section h2,
 section h3 {
-    margin-left: 30px;
+    margin-left: 80px;
     margin-right: 30px;
 }
 
@@ -31,4 +31,34 @@ section h3 {
     padding: 15px;
     margin: 15px 30px; 
     border-radius: 6px; 
+}
+
+.accordion-flush {
+    max-width: 800px;
+    margin: 30px;
+    margin-top: 20px; 
+    border: 2px solid #909091;
+    border-radius: 12px;
+    overflow: hidden;  
+}
+
+.accordion-flush .accordion-item:last-child {
+    border-bottom: none; 
+}
+
+.accordion-body {
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#piedepagina{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: column;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
 }
