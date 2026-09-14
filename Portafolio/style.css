@@ -54,12 +54,36 @@ section h3 {
     border-bottom: none; 
 }
 
-.accordion-body {
+.accordion-item:nth-child(1),
+.accordion-item2:nth-child(1) {
+    background-color: #ffadad;
+}
+
+.accordion-item:nth-child(2),
+.accordion-item2:nth-child(2) {
+    background-color: #ffd6a5;
+}
+
+.accordion-item:nth-child(3) {
+    background-color: #fdffb6;
+}
+
+.accordion-item:nth-child(4) {
+    background-color: #caffbf;
+}
+
+.accordion-item:nth-child(5) {
+    background-color: #a0c4ff;
+}
+
+.accordion-body,
+.accordion-body2 {
     text-align: justify;
     margin-left: 60px;
     margin-right: 15px;
 
 }
+
 
 .accordion-button {
     font-size: 18px;
