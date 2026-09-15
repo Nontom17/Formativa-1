@@ -1,22 +1,28 @@
-.perfil-section {
-    background-color: #f0f0f0; 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(138, 138, 138);
+    color: rgb(255, 255, 255);
+}
+
+#perfil-section {
     padding: 20px;
 }
 
 .perfil-header {
     display: flex;
-    align-items: center; 
-    gap: 20px; 
+    align-items: center;
+    gap: 20px;
 }
 
 .Titulo {
-    margin-right: 30px; 
+    margin-right: 30px;
 }
 
 #Imagenperfil {
-
     border-radius: 60px;
-
 }
 
 .sobremi {
@@ -24,7 +30,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 80px 200px; 
+    margin: 80px 200px;
     font-size: 18px;
 
 }
@@ -36,49 +42,51 @@ section h2 {
 
 .container {
     text-align: justify;
-    border: 1px solid #ccc; 
     padding: 15px;
-    margin: 25px 60px; 
-    border-radius: 6px; 
+    margin: 25px 60px;
+    border-radius: 6px;
+    font-size: 24px;
 }
 
-/* Contenedor general del acordeón */
+/* Contenedor del acordeón */
+
 .accordion-flush {
-    max-width: 800px;
+    max-width: 700px;
     margin: 30px auto;
-    border: 2px solid rgb(144, 144, 145);
+    border: 2px solid rgb(138, 138, 138);
     border-radius: 12px;
-    overflow: hidden;
 }
 
 .accordion-flush .accordion-item:last-child {
     border-bottom: none;
 }
 
-/* Colores definidos una sola vez por posición */
+/* Colores del accordion*/
+
 .accordion-item:nth-child(1),
 .accordion-item2:nth-child(1) {
-    --color-item: rgb(255, 173, 173);
+    --color-item: rgb(105, 138, 144);
 }
 
 .accordion-item:nth-child(2),
 .accordion-item2:nth-child(2) {
-    --color-item: rgb(255, 214, 165);
+    --color-item: rgb(164, 144, 184);
 }
 
 .accordion-item:nth-child(3) {
-    --color-item: rgb(253, 255, 182);
+    --color-item: rgb(173, 175, 114);
 }
 
 .accordion-item:nth-child(4) {
-    --color-item: rgb(202, 255, 191);
+    --color-item: rgb(164, 144, 184);
 }
 
 .accordion-item:nth-child(5) {
-    --color-item: rgb(160, 196, 255);
+    --color-item: rgb(105, 138, 144);
 }
 
-/* Color al cuerpo del acordeón */
+/* Color cuerpo del accordion */
+
 .accordion-item,
 .accordion-item2 {
     background-color: var(--color-item);
@@ -89,30 +97,34 @@ section h2 {
     background-color: var(--color-item);
 }
 
-/* Mantiene el color también cuando el panel está abierto */
 .accordion-button:not(.collapsed) {
     background-color: var(--color-item);
 }
 
 /* Estilo del texto del título */
+
 .accordion-button {
     font-size: 18px;
     transition: font-size 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .accordion-button:hover {
     font-size: 20px;
     font-weight: bold;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
 /* Texto del contenido */
 .accordion-body {
     text-align: justify;
-    margin-left: 60px;
-    margin-right: 15px;
 }
 
-<!--Proyectos-->
+/*Proyectos*/
 
 .proyectos-container {
     display: flex;
@@ -124,7 +136,7 @@ section h2 {
 
 .proyecto-card {
     width: 620px;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(138, 138, 138, 0.575);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
@@ -134,7 +146,7 @@ section h2 {
 .proyecto-card img {
     width: 100%;
     height: 300px;
-    object-fit: cover; /* recorta la imagen sin deformarla */
+    object-fit: cover;
     display: block;
 }
 
@@ -147,7 +159,7 @@ section h2 {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
-    color: #1a1a1a;
+    color: rgb(26, 26, 26);
     text-decoration: none;
 }
 
@@ -155,10 +167,10 @@ section h2 {
     text-decoration: underline;
 }
 
-.proyecto-descripcion {
+.proyectodescripcion {
     text-align: justify;
-    font-size: 0.95rem;
-    color: #555;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
 }
 
 .proyecto-card:hover {
@@ -166,15 +178,119 @@ section h2 {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/*galeria de imagenes*/
 
+.carousel {
+    max-width: 1000px;
+    max-height: 600px;
+    margin: 10px auto;
+    border: 2px solid rgba(138, 138, 138, 0.575);
+    border-radius: 12px;
+}
 
-#piedepagina{
+.carousel-item img {
+    height: 500px;
+    object-fit: fill;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
 
+.carousel-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.carousel-caption h5 {
+    font-size: 40px;
+}
+
+/*Pie de pagina*/
+
+#piedepagina {
+    background-color: rgb(50, 52, 56);
+    color: rgb(230, 230, 230);
+    padding: 40px 20px;
+}
+
+.containerpiedepagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.columnapiedepagina {
+    flex: 1;
+    min-width: 250px;
+}
+
+.columnapiedepagina h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* Tabla */
+.columnapiedepagina table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.columnapiedepagina td,
+.columnapiedepagina th {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Enlaces */
+.links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
+    gap: 10px;
+}
+
+.boton {
+    display: block;
+    background-color: rgb(136, 154, 170);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: rgb(62, 72, 94);
+    color: white;
+}
+
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(114, 199, 195);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(74, 79, 90);
 }

@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="#perfil-section">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis proyectos</a>
+                        <a class="nav-link" href="#conocimientos">Conocimientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galeria de Imagenes</a>
+                        <a class="nav-link" href="#proyectos">Mis proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Enlaces</a>
+                        <a class="nav-link" href="#galeria-de-imagenes">Galeria de Imagenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#piedepagina">Enlaces</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +48,7 @@
 
     <!--Encabezado-->
 
-    <section class="perfil-section">
+    <section id="perfil-section">
         <div class="perfil-header">
             <img id="Imagenperfil" src="img/Perfil.png" alt="Avatar" height="200">
             <h1 class="Titulo">Mi Perfil</h1>
@@ -57,16 +60,16 @@
 
     <!--Seccion personal-->
 
-    <section>
+    <section id="sobre-mi">
         <hr>
         <h2>Sobre Mí</h2>
-        <div class="sobremi">
-            <p class="container">Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la
+        <div class="container">
+            <p>Soy de gustos variados, me gustan las matematicas, los videojuegos, el ejercicio y la
                 musica. Aspiro ha ser
                 estudiante de ingeniieria civil mecanica para luego poder trabajar en las empresas de automovilismo en
                 Europa.</p>
 
-            <p class="container">Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica
+            <p>Mi gusto por la musica y las matematicas es seguramente mi mayor motivación, la musica
                 me
                 ayuda a seguir
                 adelante y las matematicas me ayudan a cumplir mis metas. Este año espero salir de cuarto medio habiendo
@@ -78,7 +81,7 @@
     </section>
 
 
-    <section>
+    <section id="conocimientos">
         <!--Lista de conocimientos e intereses Accordion 1-->
 
         <h2>Tecnologias y conocimientos</h2>
@@ -201,7 +204,7 @@
 
     <!--Proyectos-->
 
-    <section>
+    <section id="proyectos">
         <h2>Mis Proyectos</h2>
         <p class="container">A lo largo de mi estadia estudiantil e realizado varios proyectos aunque en su mayoria de
             programación, como en java y html los cuales quedan adjuntos:</p>
@@ -225,7 +228,7 @@
                     <a href="https://github.com/Nontom17/Primera-pagina-web.git" class="proyecto-titulo">
                         Proyecto Primera Pagina Web Html
                     </a>
-                    <p class="proyecto-descripcion">Aca está la primera pagina que realicé con html, simplemente
+                    <p class="proyectodescripcion">Aca está la primera pagina que realicé con html, simplemente
                         aprendiendo las cosas basicas y viendo como lucen al hacerlo funcionar</p>
                 </div>
             </div>
@@ -235,97 +238,112 @@
 
     <!--Galeria de Imagenes-->
 
-    <section>
+    <section id="galeria-de-imagenes">
         <h2>Galeria de Imagenes</h2>
-        <p class="container">Aca dejo un par de imagenes de mis actividades y cosas personales sobre mi</p>
-        <ul>
-            <li>Mi deporte de motor favorito
-                <br>
-                <img src="img/Formula1.webp" alt="Carrera F1" height="250">
-            </li>
-            <br>
-            <li>Mi juego favorito
-                <br>
-                <img src="img/DeadCells.jpg" alt="Dead Cells" height="250">
-            </li>
-            <br>
-            <li>Mi banda favorita
-                <br>
-                <img src="img/SLipknot.jpg" alt="Slipknot" height="250">
-            </li>
-        </ul>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Formula1.webp" class="d-block w-100" alt="Formula 1" height="600" width="300">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mi deporte favorito</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/DeadCells.jpg" class="d-block w-100" alt="Dead Cells" height="600" width="300">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mi juego favorito</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/SLipknot.jpg" class="d-block w-100" alt="Slipknot" height="600" width="300">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mi banda favorita</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <hr>
     </section>
 
-    <!--Piedepagina-->
+    <!--Pie de pagina-->
+
 
     <div id="piedepagina">
 
-        <!--informacion personal-->
+        <div class="containerpiedepagina">
 
-        <section>
-            <h2>Mi Información personal</h2>
+            <!--informacion personal-->
 
-            <table border="1px">
-                <THead>
-                    <th>Categoria</th>
-                    <th>Información</th>
-                </THead>
-                <tbody>
-                    <tr>
-                        <td>Ciudad</td>
-                        <td>Villa Alemana</td>
-                    </tr>
-                    <tr>
-                        <td>Hobby</td>
-                        <td>Escuchar musica</td>
-                    </tr>
-                    <tr>
-                        <td>Comida Favorita</td>
-                        <td>Pizza</td>
-                    </tr>
-                    <tr>
-                        <td>Lenguaje Favorito</td>
-                        <td>Java</td>
-                    </tr>
-                </tbody>
+            <section class="columnapiedepagina">
+                <h2>Mi Información personal</h2>
+                <table border="1px">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Información</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ciudad</td>
+                            <td>Villa Alemana</td>
+                        </tr>
+                        <tr>
+                            <td>Hobby</td>
+                            <td>Escuchar musica</td>
+                        </tr>
+                        <tr>
+                            <td>Comida Favorita</td>
+                            <td>Pizza</td>
+                        </tr>
+                        <tr>
+                            <td>Lenguaje Favorito</td>
+                            <td>Java</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-            </table>
-            <hr>
-        </section>
+            <!--Enlaces-->
+            <section class="columnapiedepagina">
+                <h2>Enlaces</h2>
+                <div class="links">
+                    <a href="https://github.com/Nontom17" class="boton">Perfil de GitHub</a>
+                    <a href="https://youtube.com/@nontom._.17?si=YW6N7LClLAYYc9A_" class="boton">Youtube</a>
+                    <a href="https://open.spotify.com/intl-es" class="boton">Spotify</a>
+                </div>
+            </section>
 
-        <!--Enlaces-->
+            <!--formulario-->
+            <section class="columnapiedepagina">
+                <h2>Contacto</h2>
+                <form action="" class="formulario">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre">
 
-        <section>
-            <h2>Enlaces</h2>
-            <br>
-            <a href="https://github.com/Nontom17">Perfil de GitHub</a>
-            <br>
-            <a href="https://youtube.com/@nontom._.17?si=YW6N7LClLAYYc9A_">Youtube</a>
-            <br>
-            <a href="https://open.spotify.com/intl-es">Spotify</a>
-        </section>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo">
 
-        <!--formulario-->
+                    <label for="mensaje">Asunto y mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="4"></textarea>
 
-        <section>
-            <form action="">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
 
-                <label for="Nombre">Nombre: </label>
-                <input type="text" id="Nombre">
-                <br>
-                <label for="correo">Correo: </label>
-                <input type="email">
-                <br>
-                <label for="mensaje">Asunto y mensaje: </label>
-                <textarea name="mensaje" id="mensaje" rows="4" cols="20"></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-
-
-            </form>
-        </section>
+        </div>
     </div>
+
 
 </body>
 
