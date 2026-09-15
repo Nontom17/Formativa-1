@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 
+/*color body*/
+
 body {
     background-color: rgb(138, 138, 138);
     color: rgb(255, 255, 255);
 }
+
+/*seccion perfil*/
 
 #perfil-section {
     padding: 20px;
@@ -18,11 +22,27 @@ body {
 }
 
 .Titulo {
-    margin-right: 30px;
+    margin: 30px;
+    animation: deslizar-texto 0.8s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards; 
 }
 
 #Imagenperfil {
-    border-radius: 60px;
+
+    border-radius: 80px;
+    animation: deslizar 0.8s ease-out;
+}
+
+@keyframes deslizar {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* empieza 100px a la izquierda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* termina en su posición normal */
+    }
 }
 
 .sobremi {
@@ -46,7 +66,23 @@ section h2 {
     margin: 25px 60px;
     border-radius: 6px;
     font-size: 24px;
+    animation: deslizar-texto 0.8s ease-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
 }
+
+@keyframes deslizar-texto {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*seccion conocimientos*/
 
 /* Contenedor del acordeón */
 
@@ -101,7 +137,7 @@ section h2 {
     background-color: var(--color-item);
 }
 
-/* Estilo del texto del título */
+/* Estilo del texto y título del accordion */
 
 .accordion-button {
     font-size: 18px;
@@ -120,11 +156,12 @@ section h2 {
 }
 
 /* Texto del contenido */
+
 .accordion-body {
     text-align: justify;
 }
 
-/*Proyectos*/
+/*seccion Proyectos*/
 
 .proyectos-container {
     display: flex;
@@ -133,6 +170,8 @@ section h2 {
     gap: 50px;
     justify-content: center;
 }
+
+/*cards de proyectos*/
 
 .proyecto-card {
     width: 620px;
@@ -143,12 +182,16 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.4s ease;
 }
 
+/*imagenes de las cards*/
+
 .proyecto-card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     display: block;
 }
+
+/*texto de las cards*/
 
 .proyecto-info {
     padding: 15px;
@@ -178,7 +221,7 @@ section h2 {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/*galeria de imagenes*/
+/*seccion galeria de imagenes*/
 
 .carousel {
     max-width: 1000px;
@@ -232,6 +275,7 @@ section h2 {
 }
 
 /* Tabla */
+
 .columnapiedepagina table {
     width: 100%;
     border-collapse: collapse;
@@ -241,6 +285,7 @@ section h2 {
 .columnapiedepagina th {
     padding: 8px;
     text-align: left;
+    border: solid 1px rgb(110, 104, 104);
 }
 
 /* Enlaces */
@@ -265,7 +310,6 @@ section h2 {
     background-color: rgb(62, 72, 94);
     color: white;
 }
-
 
 /* Formulario */
 
