@@ -141,11 +141,11 @@ section h2 {
 }
 
 .accordion-item:nth-child(3) {
-    --color-item: rgb(90, 90, 90);
+    --color-item: rgb(134, 134, 134);
 }
 
 .accordion-item:nth-child(4) {
-    --color-item: rgb(134, 134, 134);
+    --color-item: rgb(173, 173, 173);
 }
 
 .accordion-item:nth-child(5) {
