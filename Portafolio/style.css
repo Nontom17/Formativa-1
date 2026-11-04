@@ -400,24 +400,24 @@ section h2 {
 
 .accordion-item:nth-child(1),
 .accordion-item2:nth-child(1) {
-    --color-item: rgb(105, 138, 144);
+    --color-item: rgb(115, 136, 139);
 }
 
 .accordion-item:nth-child(2),
 .accordion-item2:nth-child(2) {
-    --color-item: rgb(164, 144, 184);
+    --color-item: rgb(164, 164, 164);
 }
 
 .accordion-item:nth-child(3) {
-    --color-item: rgb(173, 175, 114);
+    --color-item: rgb(173, 173, 173);
 }
 
 .accordion-item:nth-child(4) {
-    --color-item: rgb(164, 144, 184);
+    --color-item: rgb(107, 107, 107);
 }
 
 .accordion-item:nth-child(5) {
-    --color-item: rgb(105, 138, 144);
+    --color-item: rgb(115, 136, 139);
 }
 
 /* Color cuerpo del accordion */
